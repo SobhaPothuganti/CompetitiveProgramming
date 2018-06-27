@@ -2,7 +2,7 @@ def merge_ranges(l):
     if len(l) <= 1:
         return l
 
-    l = sorted(l)
+    l = sorted(l,key=itemgetter(0))
     tup = [l[0]]
     for (i, j) in l:
         (k, l) = tup[-1]
