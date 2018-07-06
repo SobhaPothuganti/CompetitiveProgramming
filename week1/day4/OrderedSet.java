@@ -3,8 +3,7 @@ public class FindinOrderedSet {
     public static boolean contains(int[] a, int n) {
 
         // check if an integer is present in the array
-       int result = binarySearch(a
-       ,0,a.length-1,n);
+       int result = binarySearch(a,0,a.length-1,n);
         if (result == -1)
             return false;
         else
